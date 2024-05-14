@@ -1,0 +1,69 @@
+/* standardization of font and size, easiest to do it here rather than adjust on every line of text code. */
+body, html {
+    height: 100%;
+    font-family: Verdana;
+  }
+ /*background image */
+.bg-image {
+    background-size: cover;
+    height: 110%;
+    width:110%;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+/* places text over background image in a divider */
+.bg-text {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+/* header stlying */
+.bg-header {
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+/* hyperlink styling */
+a:link {
+    background-color: transparent; /* sets background color of link text */
+    text-decoration: none; /* sets the decoration of links, underline, dotted underline, etc */
+    color: white; /* sets the color of the link's text */
+  }
+  
+  a:visited {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:active {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+  } 
+  /* zoom while hovering over links. currently non-functional 
+.zoom a:hover{
+    transform: scale(2);
+    transition:all ease 500ms;
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+    
+  } */
